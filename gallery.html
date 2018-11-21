@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gallery</title>
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.css" >
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="prettyphoto/css/prettyphoto.css">
+	<link rel="stylesheet" type="text/css" href="profile.css">
+	<link rel="stylesheet" type="text/css" href="calculator.css">
+
+
+</head>
+<body>
+<div id="banner">
+	<div class="logo">
+		Mufthub
+	</div>
+	<div class="tag">
+		A Developer's Muse
+	</div>
+</div>
+<nav>
+	<a href="index.html">Home</a>
+	<a href="contact.html">Contact Us</a>
+	<a href="about.html">ABOUT Us</a>
+	<a href="gallery.html">Gallery</a>
+</nav>
+<div class="container">
+	<h1>Gallery</h1>
+<span class="fab fa-instagram fa-3x"style="color:#e1306c"></span>
+	<div class="gallery row">
+
+		<a href="dt3.jpg" rel="prettyPhoto[gallery1]" title="Learners in progress" class="col-md-4">
+			<img src="dt3.jpg" class="gallery_img">
+		</a>
+		<a href="st.jpg" rel= "prettyPhoto[gallery1]"title="Learners in progress" class="col-md-4">
+			<img src="st.jpg" class="gallery_img">
+		</a>
+		<a href="ex.jpg" rel="prettyPhoto[gallery1]"title="Learners in progress" class="col-md-4">
+			<img src="ex.jpg" class="gallery_img">
+		</a>
+	</div>
+	<div class="calculator">
+		<section class="screen">
+			0
+		</section>
+		<section class="calculator-buttons">
+			<div class="calculator-button-row">
+				<button class="calculator-button double">C</button>
+				<button class="calculator-button">←</button>
+				<button class="calculator-button">
+					÷
+				</button>
+			</div>
+			<div class="calculator-button-row">
+				<button class="calculator-button">7</button>
+				<button class="calculator-button">8</button>
+				<button class="calculator-button">9</button>
+				<button class="calculator-button">x</button>
+			</div>
+			<div class="calculator-button-row">
+				<button class="calculator-button">4</button>
+				<button class="calculator-button">5</button>
+				<button class="calculator-button">6</button>
+				<button class="calculator-button">-</button>
+			</div>
+			<div class="calculator-button-row">
+				<button class="calculator-button">1</button>
+				<button class="calculator-button">2</button>
+				<button class="calculator-button">3</button>
+				<button class="calculator-button">+</button>
+			</div>
+			<div class="calculator-button-row">
+				<button class="calculator-button triple">0</button>
+				<button class="calculator-button">=</button>
+			</div>
+		</section>
+	</div>
+	<script src="prettyphoto/js/jquery-1.3.2.min.js"></script>
+	<script src="prettyphoto/js/jquery.prettyPhoto.js"></script>
+	<script>
+		$(".gallery a[rel ^= 'prettyPhoto']") 
+		.prettyPhoto();
+	</script>
+</div>
+<script src="calculator.js"></script>
+</body>
+</html>
